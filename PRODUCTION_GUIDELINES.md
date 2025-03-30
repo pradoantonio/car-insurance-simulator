@@ -95,7 +95,7 @@ This document outlines the steps required to transition the **Car Insurance Prem
 ## 9. Documentation
 
 ### Update README:
-- Remove the "Development Version" label from README.md and update installation instructions for production (e.g., how to set environment variables, run the production image).
+- Update installation instructions for production (e.g., how to set environment variables, run the production image).
 
 ### API Documentation:
 - Use FastAPI’s Swagger UI (/docs) to document all endpoints. Add descriptions to CarInput and CarOutput schemas in src/models/schemas.py with Pydantic’s description field.
