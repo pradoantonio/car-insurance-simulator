@@ -26,7 +26,7 @@ This project is currently in development and not yet ready for production use. S
 2. Access the API at `http://localhost:8000`
 
 ## Dependencies
-Managed via Poetry in `pyproject.toml`. Requires Python 3.12.
+Managed via Poetry in `pyproject.toml`.
 
 ## Usage
 1. Access the API at `http://localhost:8000/docs`
