@@ -21,7 +21,7 @@ This project is currently in development and not yet ready for production use. S
 3. Activate the virtual environment: `source .venv/bin/activate`
 4. Install dependencies: `poetry install`
 
-### Running with Docker Compose (Development)
+### Running with Docker Compose
 1. Build and start the services: `docker-compose up --build`
 2. Access the API at `http://localhost:8000`
 
