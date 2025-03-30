@@ -43,8 +43,11 @@ Managed via Poetry in `pyproject.toml`. Requires Python 3.12.
 ```
 
 ## Running Unit Tests
-This project uses `pytest` for unit testing, with tests located in the `tests/` directory. Tests are intended for development use. Follow these instructions to run the tests and generate an HTML coverage report.
+This project uses `pytest` for unit testing, with tests located in the `tests/` directory.
+
+Follow these instructions to run the tests and generate an HTML coverage report.
 ```bash
 poetry run pytest tests/ --cov=src --cov-report=html
 ```
+
 After running the command, an HTML coverage report will be generated in the htmlcov/ directory. To access it, open htmlcov/index.html in a web browser for a detailed view of test coverage across the src/ module.
