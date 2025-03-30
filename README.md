@@ -25,9 +25,6 @@ This project is currently in development and not yet ready for production use. S
 1. Build and start the services: `docker-compose up --build`
 2. Access the API at `http://localhost:8000`
 
-## Dependencies
-Managed via Poetry in `pyproject.toml`.
-
 ## Usage
 1. Access the API at `http://localhost:8000/docs`
 2. Send a POST request to `/calculate-premium` with a JSON body:
@@ -41,6 +38,9 @@ Managed via Poetry in `pyproject.toml`.
     "broker_fee": 50.0
 }
 ```
+
+## Dependencies
+Managed via Poetry in `pyproject.toml`.
 
 ## Running Unit Tests
 This project uses `pytest` for unit testing, with tests located in the `tests/` directory.
