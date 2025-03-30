@@ -9,28 +9,28 @@ This project is currently in development and not yet ready for production use. S
 - Docker
 - Docker Compose
 - Poetry (>=2.0.0)
-- Python 3.12 (for local development)
+- Python 3.12
 
 ## Installation
 1. Clone the repository: `git clone <repo-url>`
 2. Navigate to the project directory: `cd car-insurance-simulator`
 
-### Local Development with Poetry
+### Local with Poetry
 1. Install Poetry: `pip install "poetry>=2.0.0"`
-2. Install dependencies: `poetry install --only main`
-3. Activate the virtual environment: `poetry shell`
-4. Run the application: `python src/main.py`
+2. Create the virtual environment: `python -m venv .venv`
+3. Activate the virtual environment: `source .venv/bin/activate`
+4. Install dependencies: `poetry install`
 
 ### Running with Docker Compose (Development)
 1. Build and start the services: `docker-compose up --build`
 2. Access the API at `http://localhost:8000`
-   - **Note**: The Docker build uses `poetry install --no-root` to install dependencies without packaging the project itself.
 
 ## Dependencies
 Managed via Poetry in `pyproject.toml`. Requires Python 3.12.
 
 ## Usage
-Send a POST request to `/calculate-premium` with a JSON body:
+1. Access the API at `http://localhost:8000/docs`
+2. Send a POST request to `/calculate-premium` with a JSON body:
 ```json
 {
     "brand": "Toyota",
